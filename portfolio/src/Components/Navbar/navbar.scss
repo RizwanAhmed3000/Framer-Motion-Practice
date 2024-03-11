@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
 .navbar {
-    height: 70px;
+    height: 100px;
     // background-color: #fff;
 
     .wrapper {
         // background: #000;
-        max-width: 1300px;
+        max-width: 100%;
         margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 18px;
+        padding: 0px 18px;
         height: 100%;
 
         .logo {
             font-family: "Parisienne", cursive;
             font-size: 30px;
             font-weight: bold;
+            margin: auto;
 
             span {
                 color: #fca311;
