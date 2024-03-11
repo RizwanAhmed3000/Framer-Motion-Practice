@@ -4,6 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { motion } from "framer-motion"
+import Sidebar from '../Sidebar/Sidebar';
 
 
 const Navbar = () => {
@@ -24,8 +25,16 @@ const Navbar = () => {
             scale: 0.5,
             x: -100
         },
-        onTap:{
-            scale: 0.8,
+        onTap: {
+            scale: 0.5,
+            transition: {
+                type: "spring",
+                stiffness: 300,
+                damping: 15,
+            }
+        },
+        onHover: {
+            scale: 0.9,
             transition: {
                 type: "spring",
                 stiffness: 300,
@@ -34,19 +43,35 @@ const Navbar = () => {
         }
     }
 
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                type: "spring",
+                stiffness: 300,
+                damping: 15,
+                delayChildren: 0.3,
+                staggerChildren: 0.2
+            }
+        }
+    }
+
     return (
         <div className='navbar'>
             {/* Sidebar */}
+            <Sidebar />
             <div className="wrapper">
-                <motion.a href='#' className="logo" initial="hidden" whileTap="onTap" animate="visible" variants={variants}>
+                <motion.a href='#' className="logo" initial="hidden" whileTap="onTap" whileHover="onHover" animate="visible" variants={variants}>
                     Rizwan <motion.span whileHover={{ color: "#e5e5e5" }} className='logo'>Ahmed</motion.span>
                 </motion.a>
-                <div className="social">
+                <motion.div className="social" initial="hidden" animate="visible" variants={container}>
                     <a href="#"><FacebookIcon /></a>
                     <a href="#"><InstagramIcon /></a>
                     <a href="#"><LinkedInIcon /></a>
                     <a href="#"><GitHubIcon /></a>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
