@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
+
+.hero {
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg, #0e182f, #14213d);
+    overflow: hidden;
+    position: relative;
+
+
+    .wrapper {
+        .imgContainer {
+            height: 100%;
+            position: absolute;
+            top: -100px;
+            right: 50%;
+            transform: translateX(50%);
+
+            img {
+                width: 100%;
+                height: 120%;
+                transform: rotate(5deg) !important;
+            }
+        }
+
+        .name {
+            padding: 5px 10px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-size: 150px;
+                letter-spacing: 30px;
+                font-weight: 900;
+            }
+        }
+
+        .stack {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            // background-color: black;
+            padding-right: 100px;
+
+            h2 {
+                font-size: 40px;
+                letter-spacing: 10px;
+                font-weight: 900;
+                font-family: "Plaster", system-ui;
+
+                span {
+                    color: #fca311;
+                    font-family: "Plaster", system-ui;
+                }
+
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './app.scss'
 import Navbar from './Components/Navbar/Navbar'
+import Hero from './Components/Hero/Hero'
 // import Test from './Test'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div>
       <section id='Home'>
         <Navbar />
+        <Hero />
       </section>
       <section id='Services'>Parallex</section>
       <section>Services</section>
