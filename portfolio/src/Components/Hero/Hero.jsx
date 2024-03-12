@@ -27,6 +27,19 @@ const textVartiants = {
         }
     },
 }
+const slidTextVartiants = {
+    initial: {
+        x: 0,
+    },
+    animate: {
+        x: "-400%",
+        transition: {
+            repeat: Infinity,
+            repeatType: "mirror",
+            duration: 24,
+        }
+    },
+}
 
 const Hero = () => {
     return (
@@ -42,6 +55,9 @@ const Hero = () => {
                     <img src="/myImgHD2.png" alt="" />
                 </div>
             </div>
+            <motion.div className="slidingText" variants={slidTextVartiants} initial="initial" animate="animate">
+                Web & Mobile app developer
+            </motion.div>
         </div>
     )
 }
