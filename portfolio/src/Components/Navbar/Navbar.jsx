@@ -55,6 +55,24 @@ const Navbar = () => {
                 delayChildren: 0.3,
                 staggerChildren: 0.2
             }
+        },
+        onHover: {
+            color: "#fca311",
+            scale: 1.05,
+            transition: {
+                type: "spring",
+                stiffness: 400,
+                damping: 15
+            }
+        },
+        onTap: {
+            color: "#fca311",
+            scale: 0.9,
+            transition: {
+                type: "spring",
+                stiffness: 400,
+                damping: 15
+            }
         }
     }
 
@@ -67,10 +85,10 @@ const Navbar = () => {
                     Rizwan <motion.span whileHover={{ color: "#e5e5e5" }} className='logo'>Ahmed</motion.span>
                 </motion.a>
                 <motion.div className="social" initial="hidden" animate="visible" variants={container}>
-                    <a href="#"><FacebookIcon /></a>
-                    <a href="#"><InstagramIcon /></a>
-                    <a href="#"><LinkedInIcon /></a>
-                    <a href="#"><GitHubIcon /></a>
+                    <motion.a href="#" variants={container} whileHover="onHover" whileTap="onTap"><FacebookIcon /></motion.a>
+                    <motion.a href="#" variants={container} whileHover="onHover" whileTap="onTap"><InstagramIcon /></motion.a>
+                    <motion.a href="#" variants={container} whileHover="onHover" whileTap="onTap"><LinkedInIcon /></motion.a>
+                    <motion.a href="#" variants={container} whileHover="onHover" whileTap="onTap"><GitHubIcon /></motion.a>
                 </motion.div>
             </div>
         </div>
