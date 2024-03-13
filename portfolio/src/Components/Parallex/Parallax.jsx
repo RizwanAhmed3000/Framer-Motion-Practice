@@ -2,7 +2,9 @@ import './parallax.scss'
 
 const Parallax = () => {
     return (
-        <div className='parallax'>Parallax</div>
+        <div className='parallax'>
+            <div className="stars">parallax</div>
+        </div>
     )
 }
 
