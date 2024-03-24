@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Parallax from './Components/Parallex/Parallax'
 import Services from './Components/Services/Services'
+import Portfolio from './Components/Portfolio/Portfolio'
 // import Test from './Test'
 
 function App() {
@@ -23,9 +24,7 @@ function App() {
       <section id='Portfolio'>
         <Parallax type="portfolio" />
       </section>
-      <section>Portfolio1</section>
-      <section>Portfolio2</section>
-      <section>Portfolio3</section>
+      <Portfolio />
       <section id='About'>About</section>
       <section id='Contact'>Contact</section>
       {/* <Test /> */}
