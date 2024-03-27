@@ -24,3 +24,71 @@
         }
     }
 }
+
+.container {
+    width: 100%;
+    // background: #000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        margin: 0 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .left {
+            flex: 1;
+            // width: 100%;
+            height: 50%;
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h1 {
+                font-size: 42px;
+                letter-spacing: 5px;
+                color: #fca311;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #e5e5e5;
+                width: 70%;
+                text-align: justify;
+            }
+
+            button {
+                background-color: #fca311;
+                width: 50%;
+                min-height: 50px;
+                max-height: 100px;
+                border: none;
+                border-radius: 50px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
