@@ -27,12 +27,6 @@ const items = [
         img: "https://images.unsplash.com/photo-1711117479067-584465e4466a?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat esse modi ipsam dignissimos repudiandae recusandae, tempora facere eius sunt quas impedit accusantium. Saepe et asperiores nostrum dolorem! Totam, placeat."
     },
-    {
-        id: 4,
-        title: "Project Title 5",
-        img: "https://images.unsplash.com/photo-1711116179078-7daa4e415701?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat esse modi ipsam dignissimos repudiandae recusandae, tempora facere eius sunt quas impedit accusantium. Saepe et asperiores nostrum dolorem! Totam, placeat."
-    },
 ]
 
 const SingleSection = ({ item }) => {
