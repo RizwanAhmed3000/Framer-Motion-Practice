@@ -27,7 +27,7 @@ function App() {
       </section>
       <Portfolio />
       <About />
-      <section id='Contact'>Contact</section>
+      {/* <section id='Contact'>Contact</section> */}
       {/* <Test /> */}
     </div>
   )
