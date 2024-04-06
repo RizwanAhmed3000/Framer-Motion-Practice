@@ -6,6 +6,7 @@ import Parallax from './Components/Parallex/Parallax'
 import Services from './Components/Services/Services'
 import Portfolio from './Components/Portfolio/Portfolio'
 import About from './Components/About/About'
+import Contact from './Components/Contact/Contact'
 // import Test from './Test'
 
 function App() {
@@ -27,7 +28,9 @@ function App() {
       </section>
       <Portfolio />
       <About />
-      {/* <section id='Contact'>Contact</section> */}
+      <section id='Contact'>
+        <Contact />
+      </section>
       {/* <Test /> */}
     </div>
   )
