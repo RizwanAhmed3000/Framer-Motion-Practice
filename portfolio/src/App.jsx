@@ -15,22 +15,22 @@ function App() {
     <div>
       <section id='Home'>
         <Navbar />
-        <Hero />
+        {/* <Hero /> */}
       </section>
-      <section id='Services'>
+      {/* <section id='Services'>
         <Parallax type="service" />
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <Services />
-      </section>
-      <section id='Portfolio'>
+      // </section> */}
+      {/* <section id='Portfolio'>
         <Parallax type="portfolio" />
-      </section>
-      <Portfolio />
-      <About />
-      <section id='Contact'>
+      </section> */}
+      {/* <Portfolio /> */}
+      {/* <About /> */}
+      {/* <section id='Contact'>
         <Contact />
-      </section>
+      </section> */}
       {/* <Test /> */}
     </div>
   )
