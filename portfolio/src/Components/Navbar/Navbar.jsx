@@ -79,7 +79,6 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             {/* Sidebar */}
-            {/* Sidebar */}
             <Sidebar />
             <div className="wrapper">
                 <motion.a href='#' className="logo" initial="hidden" whileTap="onTap" whileHover="onHover" animate="visible" variants={variants}>
