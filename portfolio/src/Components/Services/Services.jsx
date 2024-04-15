@@ -31,7 +31,7 @@ const textVariant = {
         }
     },
     hidden: {
-        x: 500,
+        x: 200,
         opacity: 0,
         y: 100,
         transition: {
@@ -50,7 +50,7 @@ const titleVariant = {
         }
     },
     hidden: {
-        x: -500,
+        x: -200,
         opacity: 0,
         y: 100,
     }

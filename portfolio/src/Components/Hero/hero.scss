@@ -31,7 +31,7 @@
 
                 @include mobile {
                     height: 100%;
-                    // object-fit: cover;
+                    object-fit: contain;
                 }
             }
         }
@@ -99,7 +99,9 @@
         font-weight: bold;
 
         @include mobile {
-            display: none;
+            // display: none;
+            top: 100px;
+            font-size: 23vh;
         }
     }
 }

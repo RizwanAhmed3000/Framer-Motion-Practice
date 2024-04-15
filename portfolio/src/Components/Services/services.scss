@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .services {
     width: 100%;
     height: 100%;
@@ -15,10 +17,20 @@
         align-items: center;
         gap: 20px;
 
+        @include mobile {
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
         hr {
             width: 500px;
             border: none;
             border-top: 1px solid #fca311;
+
+            @include mobile {
+                width: 300px;
+            }
         }
 
         p {
@@ -36,9 +48,20 @@
         justify-content: center;
         cursor: default;
 
+        @include mobile {
+            width: 100%;
+        }
+
         .title {
             font-size: 50px;
             letter-spacing: 20px;
+
+            @include mobile {
+                font-size: 20px;
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
 
             span {
                 font-weight: 900;
@@ -46,6 +69,10 @@
 
             h1 {
                 font-weight: 300;
+
+                @include mobile {
+                    font-size: 36px;
+                }
             }
         }
     }
@@ -59,5 +86,11 @@
         flex-wrap: wrap;
         // margin-bottom: 50px;
         margin: 30px 10px;
+
+        @include mobile {
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+        }
     }
 }

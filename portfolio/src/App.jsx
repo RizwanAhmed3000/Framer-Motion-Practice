@@ -21,15 +21,15 @@ function App() {
       </section>
       <section>
         <Services />
-      // </section>
+      </section>
       <section id='Portfolio'>
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <About />
-      <section id='Contact'>
+      {/* <About /> */}
+      {/* <section id='Contact'>
         <Contact />
-      </section>
+      </section> */}
       {/* <Test /> */}
     </div>
   )
