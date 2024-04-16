@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 #about {
   position: relative;
 
@@ -12,6 +14,12 @@
     color: #fca311;
     font-weight: 900;
     margin-right: 50px;
+
+    @include mobile{
+      font-size: 18px;
+      margin-right: 0px;
+      padding-top: 30px;
+    }
   }
 
   .container {
@@ -34,17 +42,34 @@
       text-transform: uppercase;
       cursor: default;
 
+      @include mobile{
+        margin: 20px 5px;
+        font-size: 25px;
+        justify-content: center;
+        gap: 10px;
+        height: 80%;
+      }
+
       .t1 {
         text-align: left;
+        @include mobile{
+          text-align: center;
+        }
       }
 
       .t2 {
         text-align: center;
         color: #fca311;
+        @include mobile{
+          text-align: center;
+        }
       }
 
       .t3 {
         text-align: right;
+        @include mobile{
+          text-align: center;
+        }
       }
     }
   }
@@ -58,6 +83,10 @@
       width: 500px;
       border: none;
       border-top: 1px solid #fca311;
+
+      @include mobile {
+        width: 100px;
+      }
     }
 
     p {
